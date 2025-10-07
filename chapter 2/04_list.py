@@ -8,3 +8,5 @@ if(num>=1 and num<=12):
     print(monthNames[num-1])
 else:
     print("Invalid input")
+
+# EXIT is use to terminate the execution of the code
