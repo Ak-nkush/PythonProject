@@ -8,14 +8,14 @@ class Palindrome:
         b = len(self.str) - 1
         while a <= b:
             if self.str[a] != self.str[b]:
-                print("Not a palindrome")
+                print("Given string is not a palindrome")
                 return
             a = a + 1
             b = b - 1
         print("Its a palindrome")
 
 
-st = input("Enter a string to check whether it is palindrome string or not: ")
+st = input("Enter a string to check whether it is palindromic string or not: ")
 x = Palindrome(st)
 x.checkPalindrome()
 

@@ -1,18 +1,27 @@
-st = input("Enter the string: ")
+class Reverse:
+    def __init__(self,string):
+        self.str = string
 
-word = ""
-sentence = ""
-for i in range(len(st)-1,-1,-1):
-    if st[i] != " " :
-        word  = st[i] + word
-    elif st[i] == " " :
-        sentence = sentence + " " + word
+    def reverse_string(self):
         word = ""
+        newSentence = ""
+        for i in range(0,len(self.str)) :
+            if self.str[i] != " " :
+                word += self.str[i]
+            if self.str[i]==" " or i==len(self.str) - 1  :
+                newSentence = word +" "+ newSentence
+                word = ""
 
-    if st[i] != " " and i == 0 :
-        sentence = sentence + " " + word
+        return newSentence
 
-print(sentence)
+st = input("Enter the string: ")
+x = Reverse(st)
+print("The reversed string is : ")
+print(x.reverse_string())
+
+
+
+
 
 
 

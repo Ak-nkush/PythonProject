@@ -1,5 +1,6 @@
 # open the file
 myfile = open("abc.text","r")
+print(myfile)
 # use readline to read all the lines of the given file
 fileData = myfile.readline()
 
